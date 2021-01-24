@@ -1,4 +1,5 @@
 ﻿using PhoneBook.Common;
+using PhoneBook.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;

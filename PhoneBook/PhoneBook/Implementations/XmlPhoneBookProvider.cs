@@ -9,17 +9,22 @@ namespace PhoneBook.Implementations
 {
     public class XmlPhoneBookProvider : IPhoneBookProvider
     {
-        public async Task<bool> DeletePhoneBookAsync(Guid id)
+        public bool DeleteAllPhoneBooks()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<List<Entities.PhoneBook>> GetPhoneBooksAsync()
+        public bool DeletePhoneBook(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<Entities.PhoneBook> SavePhoneBookAsync(SavePhoneBookDto savePhoneBookDto)
+        public List<Entities.PhoneBook> GetPhoneBooks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Entities.PhoneBook SavePhoneBook(SavePhoneBookDto savePhoneBookDto)
         {
             throw new NotImplementedException();
         }
