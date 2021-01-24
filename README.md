@@ -48,3 +48,9 @@ Configuring it in dependency injection(.NET Core Web API example):
 ```csharp
 services.AddScoped<IPhoneBookProvider, JsonPhoneBookProvider>();
 ```
+
+# TODO
+
+- Detailed validation for phone numbers
+- Library can get the configurations from appsettings.json (idea)
+- Persistance file should be encrypted
