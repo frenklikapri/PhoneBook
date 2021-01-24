@@ -6,8 +6,8 @@ namespace PhoneBook.Common.Enums
 {
     public enum PhoneNumberTypeEnum
     {
-        Work,
-        Cellphone,
-        Home
+        Work = 0,
+        Cellphone = 1,
+        Home = 2
     }
 }

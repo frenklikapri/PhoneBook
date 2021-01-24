@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhoneBook.API</name>
+    </assembly>
+    <members>
+        <member name="M:PhoneBook.API.Controllers.PhoneBookController.GetPhoneBooks">
+            <summary>
+            Returns all the phonebook entries order by fullname
+            </summary>
+            <returns>List of <see cref="T:PhoneBook.Entities.PhoneBook"/></returns>
+        </member>
+        <member name="M:PhoneBook.API.Controllers.PhoneBookController.CreatePhonebook(PhoneBook.Dtos.SavePhoneBookDto)">
+            <summary>
+            Creates a new phonebook entry
+            </summary>
+            <param name="savePhoneBookDto">
+                Name: The person's fullname<br />
+                Type: 0 - Work, 1 - Cellphone, 2 - Home<br />
+                Number: The phone number
+            </param>
+            <returns>The created phonebook entry</returns>
+        </member>
+        <member name="M:PhoneBook.API.Controllers.PhoneBookController.EditPhonebook(PhoneBook.Dtos.SavePhoneBookDto)">
+            <summary>
+            Edit an existing phonebook entry
+            </summary>
+            <param name="savePhoneBookDto">
+                Id: The phonebook entry id<br />
+                Name: The person's fullname<br />
+                Type: 0 - Work, 1 - Cellphone, 2 - Home<br />
+                Number: The phone number
+            </param>
+            <returns>The edited phonebook entry</returns>
+        </member>
+        <member name="M:PhoneBook.API.Controllers.PhoneBookController.DeletePhoneBook(System.Guid)">
+            <summary>
+            Deletes an existing phonebook entry
+            </summary>
+            <param name="id">The id of entry</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

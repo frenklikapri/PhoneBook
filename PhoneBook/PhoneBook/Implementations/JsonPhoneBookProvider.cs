@@ -165,7 +165,7 @@ namespace PhoneBook.Implementations
                 try
                 {
                     Directory.CreateDirectory(config.Directory);
-                    File.Create(filePath);
+                    using var stream = File.Create(filePath);
                 }
                 finally
                 {
